@@ -1,49 +1,96 @@
+html {
+  font-size: 62.5%;
+}
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
 }
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.container {
-  width: 80%;
-  overflow: hidden;
+.imagens-slider{
   position: relative;
-  max-width: 600px;
-}
-.carrossel {
+  height: 100vh;
   display: flex;
-  transition: transform 0.5s ease-in-out;
+  align-items: center;
 }
-.carrossel img {
-  width: 100%;
+.imagens-slider .slide{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s ease-out;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+.imagens-slider .slide.mostrar{
+  opacity: 1;
+}
+.slide-rosa{
+  background-image: url(../src/image/imagem.png);
+}
+.slide-verde{
+  background-image: url(../src/image/imagem\ \(1\).png);
+}
+.slide-laranja{
+  background-image: url(../src/image/imagem\ \(2\).png);
+}
+.slide-azul{
+  background-image: url(../src/image/imagem\ \(3\).png);
+}
+.seta-voltar, .seta-avancar{
+  position: absolute;
+  z-index: 1;
+}
+.seta-voltar{
+  left: 4%;
+}
+.seta-avancar{
+  right: 4%;
+}
+.seta-voltar .imagem-seta, .seta-avancar .imagem-seta{
+  width: 50px;
+  height: 50px;
+}
+.opacidade{
+  opacity: 0.6;
+  cursor: default;
+}
+.conteudo{
+  display: block;
+  background-color: #ffffff;
+  margin-left: 180px;
+  padding: 65px 60px;
+  width: 620px;
   border-radius: 10px;
 }
-.btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: none;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
+.conteudo .titulo{
+  margin-bottom: 80px;
+  font-size: 5rem;
+  font-weight: 400;
 }
-.preview {
-  left: -5px;
+.conteudo .texto{
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 50px;
 }
-.preview img {
-  width: 30%;
-  height: 30%;
+.conteudo .botao{
+  font-size: 3rem;
+  font-weight: 700;
 }
-.next {
-  right: -8px;
+.botao.rosa{
+  color: #c50000;
 }
-.next img {
-  width: 30%;
-  height: 30%;
+.botao.verde{
+ color: #d9dd10;
+}
+.botao.laranja{
+  color: #a63a17;
+}
+.botao.azul{
+  color: #10acdd;
 }

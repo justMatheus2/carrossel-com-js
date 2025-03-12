@@ -5,20 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   </head>
+
   <body>
-    <main class="container">
-      <div class="carrossel">
-        <img src="src/image/slide 1.png" alt="image 1" />
-        <img src="src/image/slide 2.png" alt="image 2" />
-        <img src="src/image/slide 3.png" alt="image 3" />
-        <img src="src/image/slide 4.png" alt="image 4" />
+    <div class="imagens-slider">
+      <a href="#" id="seta-voltar" class="seta-voltar opacidade">
+        <img class="imagem-seta" src="src/image/seta esquerda.png" alt="seta voltar">
+      </a>
+      <div class="slide slide-rosa mostrar">
+        <div class="conteudo">
+          <h2 class="titulo">Titulo Imagem 1</h2>
+          <p class="texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum veniam nobis eos rem vel deserunt, cupiditate magni fugit magnam accusantium quidem eum veritatis facilis iste aliquam, explicabo aliquid voluptates consectetur?</p>
+          <a class="botao rosa" href="#">Saiba mais</a>
+        </div>
+
       </div>
 
-      <button class="btn preview" onclick="moveSlide(-1)"><img src="src/image/seta esquerda.png" alt="left arrow"></button>
-    <button class="btn next" onclick="moveSlide(1)"><img src="src/image/seta direita.png" alt="right arrow"></button>
+      <div class="slide slide-verde">
+        <div class="conteudo">
+          <h2 class="titulo">Titulo Imagem 2</h2>
+          <p class="texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum veniam nobis eos rem vel deserunt, cupiditate magni fugit magnam accusantium quidem eum veritatis facilis iste aliquam, explicabo aliquid voluptates consectetur?</p>
+          <a class="botao verde" href="#">Saiba mais</a>
+        </div>
 
-    </main>
+      </div>
+
+      <div class="slide slide-laranja">
+        <div class="conteudo">
+          <h2 class="titulo">Titulo Imagem 3</h2>
+          <p class="texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum veniam nobis eos rem vel deserunt, cupiditate magni fugit magnam accusantium quidem eum veritatis facilis iste aliquam, explicabo aliquid voluptates consectetur?</p>
+          <a class="botao laranja" href="#">Saiba mais</a>
+        </div>
+
+      </div>
+
+      <div class="slide slide-azul">
+        <div class="conteudo">
+          <h2 class="titulo">Titulo Imagem 4</h2>
+          <p class="texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum veniam nobis eos rem vel deserunt, cupiditate magni fugit magnam accusantium quidem eum veritatis facilis iste aliquam, explicabo aliquid voluptates consectetur?</p>
+          <a class="botao azul" href="#">Saiba mais</a>
+        </div>
+
+      </div>
+
+      <a href="#" id="seta-avancar" class="seta-avancar">
+        <img class="imagem-seta" src="src/image/seta direita.png" alt="seta avancar">
+      </a>
+
+
+    </div>
 
     <script src="src/index.js"></script>
   </body>
